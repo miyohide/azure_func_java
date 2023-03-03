@@ -8,7 +8,7 @@ group 'com.github.miyohide'
 version '1.0'
 
 dependencies {
-    implementation 'org.springframework.cloud:spring-cloud-function-adapter-azure:4.0.1'
+  implementation 'org.springframework.cloud:spring-cloud-function-adapter-azure:4.0.1'
 }
 
 sourceCompatibility = '17'
@@ -17,19 +17,19 @@ targetCompatibility = '17'
 compileJava.options.encoding = 'UTF-8'
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 azurefunctions {
-    resourceGroup = 'java-functions-group'
-    appName = 'myAzureFunc-1677673588191'
-    pricingTier = 'Consumption'
-    region = 'westus'
-    runtime {
-      os = 'windows'
-      javaVersion = '17'
-    }
-    localDebug = "transport=dt_socket,server=y,suspend=n,address=5005"
+  resourceGroup = 'java-functions-group'
+  appName = 'myAzureFunc-1677673588191'
+  pricingTier = 'Consumption'
+  region = 'westus'
+  runtime {
+    os = 'windows'
+    javaVersion = '17'
+  }
+  localDebug = "transport=dt_socket,server=y,suspend=n,address=5005"
 }
 
 jar {
