@@ -13,10 +13,10 @@ import com.microsoft.azure.functions.annotation.FunctionName;
 import com.microsoft.azure.functions.annotation.HttpTrigger;
 
 @Component
-public class HttpTriggerJava1 {
+public class AzureJavaExampleFunctionWithSpring {
     private final Function<String, String> uppercase;
 
-    public HttpTriggerJava1(Function<String, String> uppercase) {
+    public AzureJavaExampleFunctionWithSpring(Function<String, String> uppercase) {
         this.uppercase = uppercase;
     }
 

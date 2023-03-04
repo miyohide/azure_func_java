@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class DemoApp {
+public class HttpTriggerDemoApplication {
     @Bean
     public Function<String, String> uppercase() {
         return payload -> {
@@ -17,6 +17,6 @@ public class DemoApp {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApp.class, args);
+        SpringApplication.run(HttpTriggerDemoApplication.class, args);
     }
 }
