@@ -3,7 +3,6 @@ package com.github.miyohide;
 import java.util.Optional;
 import java.util.function.Function;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.microsoft.azure.functions.ExecutionContext;
@@ -15,8 +14,11 @@ import com.microsoft.azure.functions.annotation.HttpTrigger;
 
 @Component
 public class HttpTriggerJava1 {
-    @Autowired
-    private Function<String, String> uppercase;
+    private final Function<String, String> uppercase;
+
+    public HttpTriggerJava1(Function<String, String> uppercase) {
+        this.uppercase = uppercase;
+    }
 
     @FunctionName("example")
     public String execute(
