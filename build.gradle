@@ -34,6 +34,6 @@ azurefunctions {
 
 jar {
   manifest {
-    attributes 'Main-Class' : 'com.github.miyohide.DemoApp'
+    attributes 'Main-Class' : 'com.github.miyohide.HttpTriggerDemoApplication'
   }
 }
