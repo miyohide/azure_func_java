@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class AzureJavaExampleFunctionWithSpring {
+public class MyHttpTrigger {
 
    @Autowired
    private Function<String, String> uppercase;
