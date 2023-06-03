@@ -26,9 +26,9 @@ azurefunctions {
     resourceGroup = 'java-functions-group'
     appName = 'funcmiyohidesampleapp'
     pricingTier = 'Consumption'
-    region = 'westus'
+    region = 'japaneast'
     runtime {
-      os = 'windows'
+      os = 'linux'
       javaVersion = '17'
     }
     localDebug = "transport=dt_socket,server=y,suspend=n,address=5005"
