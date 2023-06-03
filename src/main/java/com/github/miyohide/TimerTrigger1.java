@@ -16,6 +16,6 @@ public class TimerTrigger1 {
         @TimerTrigger(name = "timerInfo", schedule = "0 */5 * * * *") String timerInfo,
         final ExecutionContext context
     ) {
-        context.getLogger().info("Java Timer trigger function executed at: " + LocalDateTime.now());
+        context.getLogger().info("Java !!! Timer trigger function executed at: " + LocalDateTime.now());
     }
 }
